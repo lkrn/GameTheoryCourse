@@ -1,8 +1,11 @@
-﻿
+﻿#region +INPUT
+
 $p1 = @('A','B','C','D')
 $p2 = @('D','B','C','A')
 $p3 = @('A','C','B','D')
 $players = @($p1,$p2,$p3)
+
+#endregion _INPUT
 
 $initPool = New-Object Collections.Generic.List[string]
 $p1 | % { $initPool.Add($_) }
